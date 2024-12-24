@@ -1,0 +1,586 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SuccessR Homepage</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1" />
+		<meta
+			name="keywords"
+			content="successR,HR,job,career,success,placement,assistance,Interview, recruitement,management consulting" />
+		<meta
+			name="author"
+			content="Project created by SuccessR web_team" />
+
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="assets/css/style.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="assets/css/bootstrap.css" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link
+			rel="icon"
+			href="assets/images/icon.ico" />
+		<!-- for icons-->
+
+		<script
+			src="https://kit.fontawesome.com/e5ed0bd796.js"
+			crossorigin="anonymous"></script>
+		<!-- fontawesome icon-->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://use.fontawesome.com/d3602999a9.js"></script>
+	</head>
+	<style>body {
+		background-color: #fff8e1 !important; 
+	}
+
+		.step-icon {
+			width: 20px;
+			height: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 1.5rem;
+			border: 2px solid #ccc;
+		}
+
+		.step-icon.bg-success {
+			border-color: #198754;
+		}
+
+		.step-icon.bg-warning {
+			border-color: #ffc107;
+		}
+
+		.step-icon.bg-light {
+			border-color: #ddd;
+		}
+
+		.card {
+			border-radius: 15px;
+		}
+
+		.progress-bar {
+			font-size: 1rem;
+			font-weight: 500;
+		}
+
+		.btn-primary {
+			background-color: #007bff;
+			border: none;
+		}
+
+		.btn-primary:hover {
+			background-color: #0056b3;
+		}
+	</style>
+
+	<body>
+		<!--------------------------------------------------- SECTION 1---------------------------------------------------------->
+		<!--  Logo and Page title section  -->
+		<div class="logoSection col-lg-12">
+			<div
+				class="col-lg-4 col-md-6 col-xs-6"
+				style="
+					top: 0%;
+					background-color: black;
+					padding-top: 2%;
+					margin-right: 8%;
+				">
+				<a href="index.html">
+					<img
+						id="logoIn"
+						src="assets/images/SuccessR logo.svg"
+						alt="logo"
+						style="
+							border: none;
+							margin-left: 0%;
+							margin-bottom: 2%;
+							width: 20%;
+						" />
+				</a>
+				<p>
+					<b> SuccessR</b><br /><i style="font-size: 15px"
+						>&nbsp;&nbsp;&nbsp;&nbsp;your way to success</i
+					>
+				</p>
+			</div>
+		</div>
+
+		<!----------------------  Nav Bar section  ----------------------->
+		<nav
+			class="navbar navbar-expand-lg"
+			style="background-color: #c59604; color: #f5d329">
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+				style="background-color: #f5d329; border-color: #fff; width: 10%">
+				<i
+					class="fa fa-bars"
+					style="width: 5%"></i
+				><a
+					class="navbar-brand"
+					href="#"
+					style="color: black; font-size: 2vw"
+					>&nbsp;MENU</a
+				>
+			</button>
+			<div
+				class="collapse navbar-collapse"
+				id="navbarNavDropdown">
+				<ul
+					class="navbar-nav"
+					style="width: 100%">
+					<li
+						class="nav-item active"
+						style="margin-right: 2%">
+						<a
+							class="nav-link"
+							href="./index.html"
+							style="color: #f5d329; font-weight: bolder"
+							>HOME <span class="sr-only">(current)</span></a
+						>
+					</li>
+					<li
+						class="nav-item dropdown"
+						style="margin-right: 2%">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="navbarDropdownMenuLink"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+							style="color: #f5d329; font-weight: bolder">
+							ABOUT US
+						</a>
+						<div
+							class="dropdown-menu"
+							aria-labelledby="navbarDropdownMenuLink"
+							style="color: #f5d329; background-color: #c59604">
+							<a
+								class="dropdown-item"
+								href="./about.html"
+								style="color: #f5d329"
+								>About SuccessR</a
+							>
+							<a
+								class="dropdown-item"
+								href="./OurTeam.html"
+								style="color: #f5d329"
+								>Our Team</a
+							>
+							<a
+								class="dropdown-item"
+								href="./OurPartners.html"
+								style="color: #f5d329"
+								>Partner with us</a
+							>
+						</div>
+					</li>
+					<li
+						class="nav-item dropdown"
+						style="margin-right: 2%">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="navbarDropdownMenuLink"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+							style="color: #f5d329; font-weight: bolder">
+							CAREER GUIDANCE
+						</a>
+						<div
+							class="dropdown-menu"
+							aria-labelledby="navbarDropdownMenuLink"
+							style="color: #f5d329; background-color: #c59604">
+							<a
+								class="dropdown-item"
+								href="#"
+								style="color: #f5d329"
+								>Job Opportunities</a
+							>
+							<a
+								class="dropdown-item"
+								href="#"
+								style="color: #f5d329"
+								>Internships</a
+							>
+							<a
+								class="dropdown-item"
+								href="#"
+								style="color: #f5d329"
+								>Courses</a
+							>
+						</div>
+					</li>
+					<li
+						class="nav-item dropdown"
+						style="margin-right: 2%">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="navbarDropdownMenuLink"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+							style="color: #f5d329; font-weight: bolder">
+							LOGIN
+						</a>
+						<div
+							class="dropdown-menu"
+							aria-labelledby="navbarDropdownMenuLink"
+							style="color: #f5d329; background-color: #c59604">
+							<a
+								class="dropdown-item"
+								href="#"
+								style="color: #f5d329"
+								>Candidate Login</a
+							>
+							<a
+								class="dropdown-item"
+								href="#"
+								style="color: #f5d329"
+								>Employer Login</a
+							>
+							<a
+								class="dropdown-item"
+								href="#"
+								style="color: #f5d329"
+								>Campus Login</a
+							>
+						</div>
+					</li>
+					<li
+						class="nav-item dropdown"
+						style="margin-right: 2%">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="navbarDropdownMenuLink"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+							style="color: #f5d329; font-weight: bolder">
+							SERVICES
+						</a>
+						<div
+							class="dropdown-menu"
+							aria-labelledby="navbarDropdownMenuLink"
+							style="color: #f5d329; background-color: #c59604">
+							<a
+								class="dropdown-item"
+								href="./PlacementAssistance.html"
+								style="color: #f5d329"
+								>Placement Assistance</a
+							>
+							<a
+								class="dropdown-item"
+								href="./JobAlerts.html"
+								style="color: #f5d329"
+								>Job Alerts</a
+							>
+							<a
+								class="dropdown-item"
+								href="TrackJobApplication.html"
+								style="color: #f5d329"
+								>Track job applications</a
+							>
+							<a
+								class="dropdown-item"
+								href="interviewPrepartion.html"
+								style="color: #f5d329"
+								>Interview Preparation</a
+							>
+							<a
+								class="dropdown-item"
+								href="OtherServices.html"
+								style="color: #f5d329"
+								>Other Services</a
+							>
+						</div>
+					</li>
+					<li
+						class="nav-item"
+						style="margin-right: 2%">
+						<a
+							class="nav-link"
+							href="#"
+							style="color: #f5d329; font-weight: bolder"
+							>BLOG</a
+						>
+					</li>
+					<li
+						class="nav-item"
+						style="margin-right: 2%">
+						<a
+							class="nav-link"
+							href="faq.html"
+							target="_blank"
+							style="color: #f5d329; font-weight: bolder"
+							>FAQs</a
+						>
+					</li>
+					<li
+						class="nav-item"
+						style="margin-right: 2%">
+						<a
+							class="nav-link"
+							href="contactUs.html"
+							target="_blank"
+							style="color: #f5d329; font-weight: bolder"
+							>CONTACT US</a
+						>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- ------------------------------------------------------------------------------------------ -->
+
+		<section class="py-5">
+			<div class="container">
+				<!-- Header Section -->
+				<div class="text-center mb-5">
+					<h1 class="display-5 fw-bold text-dark">
+						Track Your Job Application
+					</h1>
+					<p class="text-muted">
+						Stay updated on your application progress in real time.
+					</p>
+				</div>
+
+				<!-- Tracking Form -->
+				<div class="row justify-content-center">
+					<div class="col-lg-6 col-md-8">
+						<div
+							class="card shadow-sm border-0"
+							style="background-color: #fff4cc">
+							<div class="card-body p-4">
+								<form>
+									<div class="mb-4">
+										<label
+											for="applicationID"
+											class="form-label"
+											>Application ID</label
+										>
+										<input
+											type="text"
+											id="applicationID"
+											class="form-control form-control-lg"
+											placeholder="Enter your application ID"
+											required
+											style="border-color: #ffd966" />
+									</div>
+									<div class="mb-4">
+										<label
+											for="email"
+											class="form-label"
+											>Email Address</label
+										>
+										<input
+											type="email"
+											id="email"
+											class="form-control form-control-lg"
+											placeholder="Enter your email"
+											required
+											style="border-color: #ffd966" />
+									</div>
+									<button
+										type="submit"
+										class="btn btn-warning btn-lg w-100 text-dark"
+										style="background-color: #ffc107; border-color: #ffc107">
+										Track Application
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Status Tracker -->
+				<div class="row justify-content-center mt-5">
+					<div class="col-lg-8">
+						<div
+							class="card border-0 shadow-sm"
+							style="background-color: #fff4cc">
+							<div class="card-body p-4">
+								<h3 class="mb-4 text-dark">Application Progress</h3>
+
+								<!-- Progress Bar -->
+								<div
+									class="progress mb-4"
+									style="height: 30px">
+									<div
+										class="progress-bar"
+										role="progressbar"
+										style="width: 50%; background-color: #ffc107"
+										aria-valuenow="50"
+										aria-valuemin="0"
+										aria-valuemax="100">
+										50% Complete
+									</div>
+								</div>
+
+								<!-- Step Tracker -->
+								<div class="row text-center">
+									<div class="col">
+										<div
+											class="step-icon bg-success text-dark rounded-circle mx-auto mb-2">
+											<i class="bi bi-check-circle-fill"></i>
+										</div>
+										<p class="m-0 fw-bold">Submitted</p>
+									</div>
+									<div class="col">
+										<div
+											class="step-icon bg-warning text-dark rounded-circle mx-auto mb-2">
+											<i class="bi bi-hourglass-split"></i>
+										</div>
+										<p class="m-0 fw-bold">Under Review</p>
+									</div>
+									<div class="col">
+										<div
+											class="step-icon bg-light text-muted rounded-circle mx-auto mb-2">
+											<i class="bi bi-circle"></i>
+										</div>
+										<p class="m-0">Interview</p>
+									</div>
+									<div class="col">
+										<div
+											class="step-icon bg-light text-muted rounded-circle mx-auto mb-2">
+											<i class="bi bi-circle"></i>
+										</div>
+										<p class="m-0">Offer</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!----Footer Section Begins------>
+		<div class="footer">
+			<div class="inner-footer">
+				<div class="footer-items">
+					<div class="footer1">
+						<h2>Quick Links</h2>
+						<div class="border"></div>
+						<ul>
+							<li>About Us</li>
+							<li>Hiring</li>
+							<li>Terms Of Use</li>
+							<li>Privacy Policy</li>
+							<li>Terms & Conditions</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-items">
+					<div class="footer2">
+						<h2>Program</h2>
+						<div class="border1"></div>
+						<ul>
+							<li>Jobs</li>
+							<li>Internships</li>
+							<li>Web Development</li>
+							<li>Machine Learning</li>
+							<li>Content Writing</li>
+							<li>Management</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-items">
+					<h2>Contact Us</h2>
+					<div class="border2"></div>
+					<ul>
+						<p>
+							<i
+								class="fa fa-map-marker"
+								aria-hidden="true"
+								style="color: #c59604"></i>
+							Room# 15, Plot# 22, Near Municipal School, Kherwadi, Bandra (E),
+							Mumbai, Maharashtra, India 40005
+						</p>
+						<li>
+							<i
+								class="fa fa-phone"
+								aria-hidden="true"
+								style="color: #c59604"></i>
+							+91-7498792719
+						</li>
+						<li>
+							<i
+								class="fa fa-envelope"
+								aria-hidden="true"
+								style="color: #c59604"></i>
+							info@successr.in
+						</li>
+					</ul>
+				</div>
+				<div class="footer-items">
+					<h2>Icons</h2>
+					<div class="border3"></div>
+					<img
+						id="google"
+						src="assets/images/googleplay.png"
+						width="147px"
+						height="45px" />
+					<div class="social-media">
+						<a href="#"
+							><i
+								class="fa fa-facebook"
+								aria-hidden="true"></i
+						></a>
+						<a href="#"
+							><i
+								class="fa fa-twitter"
+								aria-hidden="true"></i
+						></a>
+						<a href="#"
+							><i
+								class="fa fa-instagram"
+								aria-hidden="true"></i
+						></a>
+						<a href="#"
+							><i
+								class="fa fa-linkedin"
+								aria-hidden="true"></i
+						></a>
+					</div>
+				</div>
+				<hr />
+				<div id="copy-right">
+					<div>&copy; Copyright 2020 SuccessrR Pvt. Ltd.</div>
+				</div>
+			</div>
+		</div>
+
+		<!----Footer Section End----->
+	</body>
+</html>

@@ -1,0 +1,657 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SuccessR Homepage</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1" />
+		<meta
+			name="keywords"
+			content="successR,HR,job,career,success,placement,assistance,Interview, recruitement,management consulting" />
+		<meta
+			name="author"
+			content="Project created by SuccessR web_team" />
+
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="assets/css/style.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="assets/css/bootstrap.css" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link
+			rel="icon"
+			href="assets/images/icon.ico" />
+		<!-- for icons-->
+
+		<script
+			src="https://kit.fontawesome.com/e5ed0bd796.js"
+			crossorigin="anonymous"></script>
+		<!-- fontawesome icon-->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://use.fontawesome.com/d3602999a9.js"></script>
+	</head>
+	<style>body {
+		background-color: #fff8e1 !important; 
+	}
+		.bg-light-yellow {
+			background-color: #fff9e6; /* Light yellow background */
+		}
+
+		.text-warning {
+			color: #ffc107; /* Bright yellow text */
+		}
+
+		.bg-warning-light {
+			background-color: #ffeeba; /* Light yellow for cards */
+			transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+		}
+
+		.shadow-hover:hover {
+			transform: translateY(-5px); /* Slight lift on hover */
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+		}
+
+		h2.text-warning {
+			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle text shadow for focus */
+		}
+		.partner-card img {
+			border-radius: 10px; /* Smooth edges for images */
+			transition: transform 0.3s ease, filter 0.3s ease; /* Smooth image effect */
+		}
+
+		.partner-card img:hover {
+			transform: scale(1.05); /* Slight zoom effect on hover */
+			filter: brightness(1.1); /* Brighten image slightly */
+		}/* Background for the section */
+.bg-light-yellow {
+  background-color: #fff9e6; /* Light yellow */
+}
+
+/* Heading styles */
+.text-warning {
+  color: #ffc107;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Partner card container */
+.partner-card {
+  width: 100%; /* Full width of the column */
+  aspect-ratio: 1; /* Maintain square aspect ratio */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styles */
+.partner-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the card completely */
+  border-radius: 8px; /* Smooth rounded corners */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Image hover effect */
+.partner-logo:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+/* Background for the section */
+.bg-light-yellow {
+  background-color: #fff9e6; /* Light yellow */
+}
+
+/* Heading styles */
+.text-warning {
+  color: #ffc107;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Partner card container */
+.partner-card {
+  width: 100%; /* Full width of the column */
+  aspect-ratio: 1; /* Maintain square aspect ratio */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px; /* Rounded corners */
+  background-color: #ffeeba; /* Light warning background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styles */
+.partner-card img {
+	padding: 10px;
+  width: 100%; /* Take full width of container */
+  height: 100%; /* Take full height of container */
+  object-fit: cover; /* Ensures the image fills the card without distortion */
+  border-radius: 8px; /* Smooth rounded corners */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Image hover effect */
+.partner-card img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+	</style>
+
+	<body>
+		<!--------------------------------------------------- SECTION 1---------------------------------------------------------->
+		<!--  Logo and Page title section  -->
+		<div class="logoSection col-lg-12">
+			<div
+				class="col-lg-4 col-md-6 col-xs-6"
+				style="
+					top: 0%;
+					background-color: black;
+					padding-top: 2%;
+					margin-right: 8%;
+				">
+				<a href="index.html">
+					<img
+						id="logoIn"
+						src="assets/images/SuccessR logo.svg"
+						alt="logo"
+						style="
+							border: none;
+							margin-left: 0%;
+							margin-bottom: 2%;
+							width: 20%;
+						" />
+				</a>
+				<p>
+					<b> SuccessR</b><br /><i style="font-size: 15px"
+						>&nbsp;&nbsp;&nbsp;&nbsp;your way to success</i
+					>
+				</p>
+			</div>
+		</div>
+
+		<!----------------------  Nav Bar section  ----------------------->
+		<nav
+			class="navbar navbar-expand-lg"
+			style="background-color: #c59604; color: #f5d329">
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+				style="background-color: #f5d329; border-color: #fff; width: 10%">
+				<i
+					class="fa fa-bars"
+					style="width: 5%"></i
+				><a
+					class="navbar-brand"
+					href="#"
+					style="color: black; font-size: 2vw"
+					>&nbsp;MENU</a
+				>
+			</button>
+			<div
+				class="collapse navbar-collapse"
+				id="navbarNavDropdown">
+				<ul
+					class="navbar-nav"
+					style="width: 100%">
+					<li
+						class="nav-item active"
+						style="margin-right: 2%">
+						<a
+							class="nav-link"
+							href="./index.html"
+							style="color: #f5d329; font-weight: bolder"
+							>HOME <span class="sr-only">(current)</span></a
+						>
+					</li>
+					<li
+						class="nav-item dropdown"
+						style="margin-right: 2%">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="navbarDropdownMenuLink"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+							style="color: #f5d329; font-weight: bolder">
+							ABOUT US
+						</a>
+						<div
+							class="dropdown-menu"
+							aria-labelledby="navbarDropdownMenuLink"
+							style="color: #f5d329; background-color: #c59604">
+							<a
+								class="dropdown-item"
+								href="./about.html"
+								style="color: #f5d329"
+								>About SuccessR</a
+							>
+							<a
+								class="dropdown-item"
+								href="./OurTeam.html"
+								style="color: #f5d329"
+								>Our Team</a
+							>
+							<a
+								class="dropdown-item"
+								href="./OurPartners.html"
+								style="color: #f5d329"
+								>Partner with us</a
+							>
+						</div>
+					</li>
+					<li
+						class="nav-item dropdown"
+						style="margin-right: 2%">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="navbarDropdownMenuLink"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+							style="color: #f5d329; font-weight: bolder">
+							CAREER GUIDANCE
+						</a>
+						<div
+							class="dropdown-menu"
+							aria-labelledby="navbarDropdownMenuLink"
+							style="color: #f5d329; background-color: #c59604">
+							<a
+								class="dropdown-item"
+								href="#"
+								style="color: #f5d329"
+								>Job Opportunities</a
+							>
+							<a
+								class="dropdown-item"
+								href="#"
+								style="color: #f5d329"
+								>Internships</a
+							>
+							<a
+								class="dropdown-item"
+								href="#"
+								style="color: #f5d329"
+								>Courses</a
+							>
+						</div>
+					</li>
+					<li
+						class="nav-item dropdown"
+						style="margin-right: 2%">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="navbarDropdownMenuLink"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+							style="color: #f5d329; font-weight: bolder">
+							LOGIN
+						</a>
+						<div
+							class="dropdown-menu"
+							aria-labelledby="navbarDropdownMenuLink"
+							style="color: #f5d329; background-color: #c59604">
+							<a
+								class="dropdown-item"
+								href="#"
+								style="color: #f5d329"
+								>Candidate Login</a
+							>
+							<a
+								class="dropdown-item"
+								href="#"
+								style="color: #f5d329"
+								>Employer Login</a
+							>
+							<a
+								class="dropdown-item"
+								href="#"
+								style="color: #f5d329"
+								>Campus Login</a
+							>
+						</div>
+					</li>
+					<li
+						class="nav-item dropdown"
+						style="margin-right: 2%">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="navbarDropdownMenuLink"
+							role="button"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+							style="color: #f5d329; font-weight: bolder">
+							SERVICES
+						</a>
+						<div
+							class="dropdown-menu"
+							aria-labelledby="navbarDropdownMenuLink"
+							style="color: #f5d329; background-color: #c59604">
+							<a
+								class="dropdown-item"
+								href="./PlacementAssistance.html"
+								style="color: #f5d329"
+								>Placement Assistance</a
+							>
+							<a
+								class="dropdown-item"
+								href="./JobAlerts.html"
+								style="color: #f5d329"
+								>Job Alerts</a
+							>
+							<a
+								class="dropdown-item"
+								href="TrackJobApplication.html"
+								style="color: #f5d329"
+								>Track job applications</a
+							>
+							<a
+								class="dropdown-item"
+								href="interviewPrepartion.html"
+								style="color: #f5d329"
+								>Interview Preparation</a
+							>
+							<a
+								class="dropdown-item"
+								href="OtherServices.html"
+								style="color: #f5d329"
+								>Other Services</a
+							>
+						</div>
+					</li>
+					<li
+						class="nav-item"
+						style="margin-right: 2%">
+						<a
+							class="nav-link"
+							href="#"
+							style="color: #f5d329; font-weight: bolder"
+							>BLOG</a
+						>
+					</li>
+					<li
+						class="nav-item"
+						style="margin-right: 2%">
+						<a
+							class="nav-link"
+							href="faq.html"
+							target="_blank"
+							style="color: #f5d329; font-weight: bolder"
+							>FAQs</a
+						>
+					</li>
+					<li
+						class="nav-item"
+						style="margin-right: 2%">
+						<a
+							class="nav-link"
+							href="contactUs.html"
+							target="_blank"
+							style="color: #f5d329; font-weight: bolder"
+							>CONTACT US</a
+						>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!--=================================================================================================================================-->
+		<section class="py-3 py-md-5 py-xl-8 bg-light-yellow">
+			<div class="container">
+			  <div class="row justify-content-md-center">
+				<div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+				  <h2 class="fs-10 text-warning mb-4 text-uppercase text-center">
+					Our Partners
+				  </h2>
+				</div>
+			  </div>
+			</div>
+		  
+			<div class="container overflow-hidden">
+			  <div class="row gy-4">
+				<!-- Partner Card Example -->
+				<div class="col-4 col-md-3 col-xl-2 text-center">
+				  <div class="partner-card bg-warning-light rounded">
+					<img
+					  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtk1al3iOQ8p8Vr1-deWZZuIlPnRwZnFYlzQ&s"
+					  alt="Partner Logo"
+					  class="partner-logo" />
+				  </div>
+				</div>
+				<div class="col-4 col-md-3 col-xl-2 text-center">
+				  <div class="partner-card bg-warning-light rounded">
+					<img
+					  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxtND8y6wtAP4h2uWkCaIqM11EZDzho3JH9g&s"
+					  alt="Partner Logo"
+					  class="partner-logo" />
+				  </div>
+				</div>				
+				<div class="col-4 col-md-3 col-xl-2 text-center mb-2">
+					<div class="partner-card bg-warning-light  rounded">
+						<img
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHuSKg3KQINvWnpNkd9brsgcZmMyjYIeuNjQ&s"
+							  alt="Partner Logo"
+					  class="partner-logo"  />
+					</div>
+				</div>
+				<div class="col-4 col-md-3 col-xl-2 text-center mb-2">
+					<div class="partner-card bg-warning-light  rounded">
+						<img
+							src="data:image/png;base64,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"
+							  alt="Partner Logo"
+					  class="partner-logo"  />
+					</div>
+				</div>
+				<div class="col-4 col-md-3 col-xl-2 text-center mb-2">
+					<div class="partner-card bg-warning-light  rounded">
+						<img
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4kyKGkhQxAXBvvjAcvM8KymngNOUG1B7bRw&s"
+							  alt="Partner Logo"
+					  class="partner-logo"  />
+					</div>
+				</div>
+				<div class="col-4 col-md-3 col-xl-2 text-center mb-2">
+					<div class="partner-card bg-warning-light  rounded">
+						<img
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrHEd4M85__DTOyMjFV-viVspTM9m0fPFjzQ&s"
+							  alt="Partner Logo"
+					  class="partner-logo"  />
+					</div>
+				</div>
+				<div class="col-4 col-md-3 col-xl-2 text-center mb-2">
+					<div class="partner-card bg-warning-light  rounded">
+						<img
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8L9PmGM901rpsQ3VVzfXVJM4TBD65cJgl6g&s"
+							  alt="Partner Logo"
+					  class="partner-logo"  />
+					</div>
+				</div>
+				<div class="col-4 col-md-3 col-xl-2 text-center mb-2">
+					<div class="partner-card bg-warning-light  rounded">
+						<img
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDVTk7UQMgSwGvGF-2HzY0qM3gjBh6gz6WFw&s"
+							  alt="Partner Logo"
+					  class="partner-logo"  />
+					</div>
+				</div>
+				<div class="col-4 col-md-3 col-xl-2 text-center mb-2">
+					<div class="partner-card bg-warning-light  rounded">
+						<img
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRiLMq_rsIjN45wAkHt4tjx5-k9WgiQomCdQ&s"
+							  alt="Partner Logo"
+					  class="partner-logo"  />
+					</div>
+				</div>
+				<div class="col-4 col-md-3 col-xl-2 text-center mb-2">
+					<div class="partner-card bg-warning-light  rounded">
+						<img
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReInUmb48Q2T517-9Yote4KdkboD-zV1JdEA&s"
+							  alt="Partner Logo"
+					  class="partner-logo"  />
+					</div>
+				</div>
+				<div class="col-4 col-md-3 col-xl-2 text-center mb-2">
+					<div class="partner-card bg-warning-light  rounded">
+						<img
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn4dq3zo07ljS47CPDfPvLPcNEEj8uqIjzvQ&s"
+							  alt="Partner Logo"
+					  class="partner-logo"  />
+					</div>
+				</div>
+				<div class="col-4 col-md-3 col-xl-2 text-center mb-2">
+					<div class="partner-card bg-warning-light  rounded">
+						<img
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9fhglNfD9hU-0y4U_3Te6kNqEajOkIbuZsg&s"
+							  alt="Partner Logo"
+					  class="partner-logo"  />
+					</div>
+				</div></div>
+				<!-- Repeat similar partner cards -->
+			  </div>
+			</div>
+		  </section>
+		  
+
+		<!----Footer Section Begins------>
+		<div class="footer">
+			<div class="inner-footer">
+				<div class="footer-items">
+					<div class="footer1">
+						<h2>Quick Links</h2>
+						<div class="border"></div>
+						<ul>
+							<li>About Us</li>
+							<li>Hiring</li>
+							<li>Terms Of Use</li>
+							<li>Privacy Policy</li>
+							<li>Terms & Conditions</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-items">
+					<div class="footer2">
+						<h2>Program</h2>
+						<div class="border1"></div>
+						<ul>
+							<li>Jobs</li>
+							<li>Internships</li>
+							<li>Web Development</li>
+							<li>Machine Learning</li>
+							<li>Content Writing</li>
+							<li>Management</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-items">
+					<h2>Contact Us</h2>
+					<div class="border2"></div>
+					<ul>
+						<p>
+							<i
+								class="fa fa-map-marker"
+								aria-hidden="true"
+								style="color: #c59604"></i>
+							Room# 15, Plot# 22, Near Municipal School, Kherwadi, Bandra (E),
+							Mumbai, Maharashtra, India 40005
+						</p>
+						<li>
+							<i
+								class="fa fa-phone"
+								aria-hidden="true"
+								style="color: #c59604"></i>
+							+91-7498792719
+						</li>
+						<li>
+							<i
+								class="fa fa-envelope"
+								aria-hidden="true"
+								style="color: #c59604"></i>
+							info@successr.in
+						</li>
+					</ul>
+				</div>
+				<div class="footer-items">
+					<h2>Icons</h2>
+					<div class="border3"></div>
+					<img
+						id="google"
+						src="assets/images/googleplay.png"
+						width="147px"
+						height="45px" />
+					<div class="social-media">
+						<a href="#"
+							><i
+								class="fa fa-facebook"
+								aria-hidden="true"></i
+						></a>
+						<a href="#"
+							><i
+								class="fa fa-twitter"
+								aria-hidden="true"></i
+						></a>
+						<a href="#"
+							><i
+								class="fa fa-instagram"
+								aria-hidden="true"></i
+						></a>
+						<a href="#"
+							><i
+								class="fa fa-linkedin"
+								aria-hidden="true"></i
+						></a>
+					</div>
+				</div>
+				<hr />
+				<div id="copy-right">
+					<div>&copy; Copyright 2020 SuccessrR Pvt. Ltd.</div>
+				</div>
+			</div>
+		</div>
+
+		<!----Footer Section End----->
+	</body>
+</html>
