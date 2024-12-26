@@ -1,0 +1,36 @@
+/** @format */
+
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 3rem;
+	width: 100%;
+	margin: 40px 0 auto auto;
+	/* padding: 4px 20px; */
+	z-index: 9999; /* Ensure the header is above all elements */
+}
+
+/* ---------------------LOGO---------- */
+.logoSection {
+	/* position: absolute;
+	top: 30px;
+	left: 30px; */
+	display: flex;
+	width: 20%;
+}
+.logoSection p {
+	margin-left: 5%;
+	margin-top: 2%;
+	margin-bottom: 1%;
+	margin-right: 8%;
+	font-size: 2vw;
+	float: right;
+	color: #c59604;
+	line-height: 0.5;
+	width: 100%;
+}
+.logoIn {
+	height: 100%;
+	margin: 0px 40px 10px 0px;
+}

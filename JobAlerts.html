@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>SuccessR Homepage</title>
+		<title>Job Alerts</title>
 		<meta charset="utf-8" />
 		<meta
 			name="viewport"
@@ -14,11 +14,24 @@
 		<meta
 			name="author"
 			content="Project created by SuccessR web_team" />
-
+		<!-- CSS -->
+		<!-- <link
+				rel="stylesheet"
+				type="text/css"
+				href="assets/css/style.css" /> -->
 		<link
 			rel="stylesheet"
-			type="text/css"
-			href="assets/css/style.css" />
+			href="./assets/css/header.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/css/dropDown.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/css/footer.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/css/body.css" />
+		<!-- END CSS -->
 		<link
 			rel="stylesheet"
 			type="text/css"
@@ -32,6 +45,7 @@
 		<link
 			rel="icon"
 			href="assets/images/icon.ico" />
+
 		<!-- for icons-->
 
 		<script
@@ -42,59 +56,37 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://use.fontawesome.com/d3602999a9.js"></script>
+		<style>
+			.job-card {
+				border: 1px solid #ffc107;
+				border-radius: 8px;
+			}
+			.btn-yellow {
+				background-color: #ffc107;
+				color: #212529;
+			}
+			.btn-yellow:hover {
+				background-color: #e0a800;
+				color: #fff;
+			}
+			.form-control:focus {
+				border-color: #ffc107;
+				box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+			}
+		</style>
 	</head>
-	<style>
-		body {
-			background-color: #fff8e1 !important;
-		}
-		.navbar {
-			background-color: #ffc107;
-		}
-		.navbar-brand,
-		.nav-link {
-			color: #212529 !important;
-		}
-		.job-card {
-			border: 1px solid #ffc107;
-			border-radius: 8px;
-		}
-		.btn-yellow {
-			background-color: #ffc107;
-			color: #212529;
-		}
-		.btn-yellow:hover {
-			background-color: #e0a800;
-			color: #fff;
-		}
-		.form-control:focus {
-			border-color: #ffc107;
-			box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
-		}
-	</style>
 
 	<body>
 		<!--------------------------------------------------- SECTION 1---------------------------------------------------------->
-		<!--  Logo and Page title section  -->
-		<div class="logoSection col-lg-12">
-			<div
-				class="col-lg-4 col-md-6 col-xs-6"
-				style="
-					top: 0%;
-					background-color: black;
-					padding-top: 2%;
-					margin-right: 8%;
-				">
-				<a href="index.html">
+		<!-- --------------------------------------------------------------------------heder -->
+		<header>
+			<!-- -----------------------------------------------------------------logo -->
+			<div class="logoSection">
+				<a href="./index.html">
 					<img
-						id="logoIn"
+						class="logoIn"
 						src="assets/images/SuccessR logo.svg"
-						alt="logo"
-						style="
-							border: none;
-							margin-left: 0%;
-							margin-bottom: 2%;
-							width: 20%;
-						" />
+						alt="logo" />
 				</a>
 				<p>
 					<b> SuccessR</b><br /><i style="font-size: 15px"
@@ -102,247 +94,59 @@
 					>
 				</p>
 			</div>
-		</div>
+			<!-- -------------------------------------------------------------------------logo end -->
 
-		<!----------------------  Nav Bar section  ----------------------->
-		<nav
-			class="navbar navbar-expand-lg"
-			style="background-color: #c59604; color: #f5d329">
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarNavDropdown"
-				aria-controls="navbarNavDropdown"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-				style="background-color: #f5d329; border-color: #fff; width: 10%">
-				<i
-					class="fa fa-bars"
-					style="width: 5%"></i
-				><a
-					class="navbar-brand"
-					href="#"
-					style="color: black; font-size: 2vw"
-					>&nbsp;MENU</a
-				>
-			</button>
-			<div
-				class="collapse navbar-collapse"
-				id="navbarNavDropdown">
-				<ul
-					class="navbar-nav"
-					style="width: 100%">
-					<li
-						class="nav-item active"
-						style="margin-right: 2%">
-						<a
-							class="nav-link"
-							href="./index.html"
-							style="color: #f5d329; font-weight: bolder"
-							>HOME <span class="sr-only">(current)</span></a
-						>
+			<nav>
+				<ul>
+					<li><a href="./HomePage.html">Home</a></li>
+					<li class="has-submenu">
+						<a href="#">About Us</a>
+						<ul>
+							<li><a href="about.html">About</a></li>
+							<li><a href="OurTeam.html">Our Team</a></li>
+							<li><a href="OurPartners.html">Our Partners</a></li>
+						</ul>
 					</li>
-					<li
-						class="nav-item dropdown"
-						style="margin-right: 2%">
-						<a
-							class="nav-link dropdown-toggle"
-							href="#"
-							id="navbarDropdownMenuLink"
-							role="button"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-							style="color: #f5d329; font-weight: bolder">
-							ABOUT US
-						</a>
-						<div
-							class="dropdown-menu"
-							aria-labelledby="navbarDropdownMenuLink"
-							style="color: #f5d329; background-color: #c59604">
-							<a
-								class="dropdown-item"
-								href="./about.html"
-								style="color: #f5d329"
-								>About SuccessR</a
-							>
-							<a
-								class="dropdown-item"
-								href="./OurTeam.html"
-								style="color: #f5d329"
-								>Our Team</a
-							>
-							<a
-								class="dropdown-item"
-								href="./OurPartners.html"
-								style="color: #f5d329"
-								>Partner with us</a
-							>
-						</div>
+					<li class="has-submenu">
+						<a href="#">Career Guidance</a>
+						<ul>
+							<li><a href="#">Job Opportunities</a></li>
+							<li><a href="#">Internships</a></li>
+							<li><a href="#">Courses</a></li>
+						</ul>
 					</li>
-					<li
-						class="nav-item dropdown"
-						style="margin-right: 2%">
-						<a
-							class="nav-link dropdown-toggle"
-							href="#"
-							id="navbarDropdownMenuLink"
-							role="button"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-							style="color: #f5d329; font-weight: bolder">
-							CAREER GUIDANCE
-						</a>
-						<div
-							class="dropdown-menu"
-							aria-labelledby="navbarDropdownMenuLink"
-							style="color: #f5d329; background-color: #c59604">
-							<a
-								class="dropdown-item"
-								href="#"
-								style="color: #f5d329"
-								>Job Opportunities</a
-							>
-							<a
-								class="dropdown-item"
-								href="#"
-								style="color: #f5d329"
-								>Internships</a
-							>
-							<a
-								class="dropdown-item"
-								href="#"
-								style="color: #f5d329"
-								>Courses</a
-							>
-						</div>
+
+					<li class="has-submenu">
+						<a href="#"> Login </a>
+						<ul>
+							<li><a href="#">Candidate Login</a></li>
+							<li><a href="#">Employe Login</a></li>
+							<li><a href="#">Campus login</a></li>
+						</ul>
 					</li>
-					<li
-						class="nav-item dropdown"
-						style="margin-right: 2%">
-						<a
-							class="nav-link dropdown-toggle"
-							href="#"
-							id="navbarDropdownMenuLink"
-							role="button"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-							style="color: #f5d329; font-weight: bolder">
-							LOGIN
-						</a>
-						<div
-							class="dropdown-menu"
-							aria-labelledby="navbarDropdownMenuLink"
-							style="color: #f5d329; background-color: #c59604">
-							<a
-								class="dropdown-item"
-								href="#"
-								style="color: #f5d329"
-								>Candidate Login</a
-							>
-							<a
-								class="dropdown-item"
-								href="#"
-								style="color: #f5d329"
-								>Employer Login</a
-							>
-							<a
-								class="dropdown-item"
-								href="#"
-								style="color: #f5d329"
-								>Campus Login</a
-							>
-						</div>
+
+					<li class="has-submenu">
+						<a href="#">Services</a>
+						<ul>
+							<li>
+								<a href="./PlacementAssistance.html">Placement Assistance</a>
+							</li>
+							<li><a href="./JobAlerts.html">Job Alerts</a></li>
+							<li>
+								<a href="./TrackJobApplication.html">Track JOB Application</a>
+							</li>
+							<li>
+								<a href="./interviewPrepartion.html">Interview Preparation</a>
+							</li>
+							<li><a href="./OtherServices.html">Other Services</a></li>
+						</ul>
 					</li>
-					<li
-						class="nav-item dropdown"
-						style="margin-right: 2%">
-						<a
-							class="nav-link dropdown-toggle"
-							href="#"
-							id="navbarDropdownMenuLink"
-							role="button"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-							style="color: #f5d329; font-weight: bolder">
-							SERVICES
-						</a>
-						<div
-							class="dropdown-menu"
-							aria-labelledby="navbarDropdownMenuLink"
-							style="color: #f5d329; background-color: #c59604">
-							<a
-								class="dropdown-item"
-								href="./PlacementAssistance.html"
-								style="color: #f5d329"
-								>Placement Assistance</a
-							>
-							<a
-								class="dropdown-item"
-								href="./JobAlerts.html"
-								style="color: #f5d329"
-								>Job Alerts</a
-							>
-							<a
-								class="dropdown-item"
-								href="TrackJobApplication.html"
-								style="color: #f5d329"
-								>Track job applications</a
-							>
-							<a
-								class="dropdown-item"
-								href="interviewPrepartion.html"
-								style="color: #f5d329"
-								>Interview Preparation</a
-							>
-							<a
-								class="dropdown-item"
-								href="OtherServices.html"
-								style="color: #f5d329"
-								>Other Services</a
-							>
-						</div>
-					</li>
-					<li
-						class="nav-item"
-						style="margin-right: 2%">
-						<a
-							class="nav-link"
-							href="#"
-							style="color: #f5d329; font-weight: bolder"
-							>BLOG</a
-						>
-					</li>
-					<li
-						class="nav-item"
-						style="margin-right: 2%">
-						<a
-							class="nav-link"
-							href="faq.html"
-							target="_blank"
-							style="color: #f5d329; font-weight: bolder"
-							>FAQs</a
-						>
-					</li>
-					<li
-						class="nav-item"
-						style="margin-right: 2%">
-						<a
-							class="nav-link"
-							href="contactUs.html"
-							target="_blank"
-							style="color: #f5d329; font-weight: bolder"
-							>CONTACT US</a
-						>
-					</li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Contact Us</a></li>
 				</ul>
-			</div>
-		</nav>
-		<!------------------------------------------------------------------------------------------------>
+			</nav>
+		</header>
 
 		<!-- Hero Section -->
 		<section class="py-5 text-center">

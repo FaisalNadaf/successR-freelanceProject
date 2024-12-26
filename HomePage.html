@@ -3,16 +3,32 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
+		<link
+			rel="icon"
+			href="assets/images/icon.ico" />
+		<meta charset="utf-8" />
 		<meta
 			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<title>Exercise #2 || Hero section with video background</title>
+			content="width=device-width, initial-scale=1" />
+		<meta
+			name="keywords"
+			content="successR,HR,job,career,success,placement,assistance,Interview, recruitement,management consulting" />
+		<meta
+			name="author"
+			content="Project created by SuccessR web_team" />
+
+		<title>Home</title>
 
 		<!-- Reset -->
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
+		<!-- for icons-->
+
+		<script
+			src="https://kit.fontawesome.com/e5ed0bd796.js"
+			crossorigin="anonymous"></script>
+		<!-- fontawesome icon-->
 
 		<!-- Google Fonts -->
 		<link
@@ -25,9 +41,24 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap"
 			rel="stylesheet" />
+		<!-- CSS -->
+		<!-- <link
+				rel="stylesheet"
+				type="text/css"
+				href="assets/css/style.css" /> -->
+		<link
+			rel="stylesheet"
+			href="./assets/css/body.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/css/header.css" />
 		<link
 			rel="stylesheet"
 			href="./assets/css/dropDown.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/css/footer.css" />
+		<!-- END CSS -->
 		<style>
 			html {
 				font-size: 16px;
@@ -54,36 +85,28 @@
 			}
 
 			.container {
-				width: 80%;
+				width: 100%;
 				margin: 0 auto;
 				height: 100%;
-				padding: 4rem 0;
+				padding: 0 0 4rem 0;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
 				align-items: flex-start;
 			}
 
-			header {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				width: 100%;
-				height: 1.5rem;
-			}
-
 			h1 {
 				font-size: 4.875rem;
 				font-weight: 700;
-				max-width: 80%;
+				max-width: 50%;
 				line-height: 1.2;
+				margin: 0 0 6rem 10rem;
 			}
 
 			h1 span {
 				color: #ffbf1a;
 			}
 
-			/* Air */
 			video {
 				width: 100%;
 				height: 100%;
@@ -98,7 +121,6 @@
 	<body>
 		<section id="hero">
 			<div class="container">
-				<!-- Air -->
 				<video
 					autoplay
 					muted
@@ -109,27 +131,13 @@
 				</video>
 
 				<header>
-						<!-- -----------------------------------------------------------------logo -->
-				<div class="logoSection col-lg-12">
-					<div
-						class="col-lg-4 col-md-6 col-xs-6"
-						style="
-							top: 0%;
-							
-							padding-top: 2%;
-							margin-right: 8%;
-						">
-						<a href="index.html">
+					<!-- -----------------------------------------------------------------logo -->
+					<div class="logoSection">
+						<a href="./index.html">
 							<img
-								id="logoIn"
+								class="logoIn"
 								src="assets/images/SuccessR logo.svg"
-								alt="logo"
-								style="
-									border: none;
-									margin-left: 0%;
-									margin-bottom: 2%;
-									width: 20%;
-								" />
+								alt="logo" />
 						</a>
 						<p>
 							<b> SuccessR</b><br /><i style="font-size: 15px"
@@ -137,35 +145,171 @@
 							>
 						</p>
 					</div>
-				</div>
-				<!-- -------------------------------------------------------------------------logo end -->
+					<!-- -------------------------------------------------------------------------logo end -->
 
 					<nav>
 						<ul>
+							<li><a href="./HomePage.html">Home</a></li>
+
+							<li class="has-submenu">
+								<a href="#">About Us</a>
+								<ul>
+									<li><a href="about.html">About</a></li>
+									<li><a href="OurTeam.html">Our Team</a></li>
+									<li><a href="OurPartners.html">Our Partners</a></li>
+								</ul>
+							</li>
+							<li class="has-submenu">
+								<a href="#">Career Guidance</a>
+								<ul>
+									<li><a href="#">Job Opportunities</a></li>
+									<li><a href="#">Internships</a></li>
+									<li><a href="#">Courses</a></li>
+								</ul>
+							</li>
+
+							<li class="has-submenu">
+								<a href="#"> Login </a>
+								<ul>
+									<li><a href="#">Candidate Login</a></li>
+									<li><a href="#">Employe Login</a></li>
+									<li><a href="#">Campus login</a></li>
+								</ul>
+							</li>
+
 							<li class="has-submenu">
 								<a href="#">Services</a>
 								<ul>
-									<li><a href="#">Branding</a></li>
-									<li><a href="#">Web Design</a></li>
-									<li><a href="#">Web Development</a></li>
-									<li><a href="#">eCommerce</a></li>
-									<li><a href="#">Print</a></li>
+									<li>
+										<a href="./PlacementAssistance.html"
+											>Placement Assistance</a
+										>
+									</li>
+									<li><a href="./JobAlerts.html">Job Alerts</a></li>
+									<li>
+										<a href="./TrackJobApplication.html"
+											>Track JOB Application</a
+										>
+									</li>
+									<li>
+										<a href="./interviewPrepartion.html"
+											>Interview Preparation</a
+										>
+									</li>
+									<li><a href="./OtherServices.html">Other Services</a></li>
 								</ul>
 							</li>
-							<li><a href="#">Company</a></li>
 							<li><a href="#">Blog</a></li>
-							<li><a href="#">Careers</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Contact Us</a></li>
 						</ul>
 					</nav>
 				</header>
 
 				<h1>
-					Crafting <span>digital masterpieces</span> with pixel-perfect
-					precision.
+					THE EASIEST WAY TO <span>GET</span> YOUR DREAM <span>JOB.</span>
 				</h1>
-
 			</div>
 		</section>
+
+		<!----Footer Section Begins------>
+		<div class="footer">
+			<div class="inner-footer">
+				<div class="footer-items">
+					<div class="footer1">
+						<h2>Quick Links</h2>
+						<div class="border"></div>
+						<ul>
+							<li>About Us</li>
+							<li>Hiring</li>
+							<li>Terms Of Use</li>
+							<li>Privacy Policy</li>
+							<li>Terms & Conditions</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-items">
+					<div class="footer2">
+						<h2>Program</h2>
+						<div class="border1"></div>
+						<ul>
+							<li>Jobs</li>
+							<li>Internships</li>
+							<li>Web Development</li>
+							<li>Machine Learning</li>
+							<li>Content Writing</li>
+							<li>Management</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-items">
+					<h2>Contact Us</h2>
+					<div class="border2"></div>
+					<ul>
+						<p>
+							<i
+								class="fa fa-map-marker"
+								aria-hidden="true"
+								style="color: #c59604"></i>
+							Room# 15, Plot# 22, Near Municipal School, Kherwadi, Bandra (E),
+							Mumbai, Maharashtra, India 40005
+						</p>
+						<li>
+							<i
+								class="fa fa-phone"
+								aria-hidden="true"
+								style="color: #c59604"></i>
+							+91-7498792719
+						</li>
+						<li>
+							<i
+								class="fa fa-envelope"
+								aria-hidden="true"
+								style="color: #c59604"></i>
+							info@successr.in
+						</li>
+					</ul>
+				</div>
+				<div class="footer-items">
+					<h2>Icons</h2>
+					<div class="border3"></div>
+					<img
+						id="google"
+						src="assets/images/googleplay.png"
+						width="147px"
+						height="45px" />
+					<div class="social-media">
+						<a href="#"
+							><i
+								class="fa fa-facebook"
+								aria-hidden="true"></i
+						></a>
+						<a href="#"
+							><i
+								class="fa fa-twitter"
+								aria-hidden="true"></i
+						></a>
+						<a href="#"
+							><i
+								class="fa fa-instagram"
+								aria-hidden="true"></i
+						></a>
+						<a href="#"
+							><i
+								class="fa fa-linkedin"
+								aria-hidden="true"></i
+						></a>
+					</div>
+				</div>
+				<hr />
+				<div id="copy-right">
+					<div>&copy; Copyright 2020 SuccessrR Pvt. Ltd.</div>
+				</div>
+			</div>
+		</div>
+
+		<!----Footer Section End----->
 	</body>
 </html>

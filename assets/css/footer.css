@@ -1,0 +1,135 @@
+/** @format */
+
+.footer {
+	width: 100%;
+	cursor: pointer;
+	display: block;
+	color: aliceblue;
+}
+
+.inner-footer {
+	width: 100%;
+	margin: auto;
+	padding: 30px 10px;
+	display: flex;
+	flex-flow: wrap;
+	box-sizing: border-box;
+	justify-content: center;
+	background-color: #333;
+}
+.footer-items {
+	width: 25%;
+	padding: 10px 35px;
+	box-sizing: border-box;
+}
+.footer-items h1 {
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+.footer_items p {
+	font-size: 16px;
+	text-align: justify;
+	transition: 0.3s;
+}
+.footer-items h2 {
+	margin: 10px 0;
+	text-transform: uppercase;
+}
+.footer .border {
+	height: 2px;
+	width: 77px;
+	background-color: #c59604;
+}
+.border1 {
+	height: 2px;
+	width: 135px;
+	background-color: #c59604;
+}
+.border2 {
+	height: 2px;
+	width: 160px;
+	background-color: #c59604;
+	margin-bottom: 10px;
+}
+.border3 {
+	height: 3px;
+	width: 85px;
+	background-color: #c59604;
+	margin-bottom: 10px;
+}
+.footer ul {
+	list-style: none;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+	padding-left: 0px;
+}
+.footer ul li {
+	margin: 10px 0;
+	height: 25px;
+}
+.footer li i {
+	margin-right: 20px;
+}
+.footer-bottom {
+	padding: 10px;
+	background-color: #3d545f;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	width: 100%;
+}
+hr {
+	background-color: #ff9800;
+	width: 85%;
+}
+#google {
+	cursor: pointer;
+	max-width: 120px;
+}
+/*Social Links*/
+.social-media {
+	color: #fff;
+}
+social-media a {
+	text-decoration: none;
+}
+.social-media i {
+	height: 28px;
+	width: 28px;
+	margin: 10px 1px;
+	padding: 7px;
+	color: #fff;
+	border-radius: 50%;
+	border: 1px solid grey;
+	transition: 0.3s;
+	text-align: center;
+}
+.social-media i:hover {
+	background: #c59604;
+}
+#copy-right div {
+	color: #8e8e8e;
+	font-size: 15px;
+}
+/*---media query for footer----*/
+@media screen and (max-width: 1085px) {
+	.footer-items {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.footer-items {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 601px) {
+	.footer1 {
+		display: none;
+		margin-top: 20px;
+	}
+
+	.footer2 {
+		display: none;
+	}
+}

@@ -21,18 +21,38 @@
 	--line-height: 1.8;
 }
 
-/* About Section */
-section {
+/* Global Styles */
+body {
 	font-family: "Poppins", sans-serif;
+	background-color: var(--background-color);
+	line-height: var(--line-height);
+	margin: 0;
+	padding: 0;
 }
 
+/* About Section */
+section {
+	padding: var(--padding-large) var(--padding-medium);
+}
+
+/* Headings */
 h2,
 h3 {
 	font-weight: 600;
+	color: var(--primary-color);
+}
+
+h2 {
+	font-size: var(--font-size-large);
+}
+
+h3 {
+	font-size: var(--font-size-medium);
 }
 
 /* Image Styling */
 .about-img {
+	width: 80%;
 	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
 
@@ -59,14 +79,6 @@ h3 {
 	color: var(--primary-color);
 }
 
-h2 {
-	color: var(--primary-color);
-}
-
-h3 {
-	color: var(--primary-color);
-}
-
 /* Responsiveness */
 @media (max-width: 768px) {
 	h2,
@@ -84,6 +96,6 @@ h3 {
 	}
 
 	.feature-icon {
-		margin-bottom: 15px;
+		margin-bottom: var(--padding-small);
 	}
 }
