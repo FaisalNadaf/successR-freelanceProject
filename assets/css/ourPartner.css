@@ -1,8 +1,5 @@
 /** @format */
 
-body {
-	background-color: #fff8e1 !important;
-}
 .bg-light-yellow {
 	background-color: #fff9e6; /* Light yellow background */
 }
@@ -53,6 +50,7 @@ h2.text-warning {
 	overflow: hidden;
 	position: relative;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	/* padding-top: 10px; */
 }
 
 /* Card hover effect */

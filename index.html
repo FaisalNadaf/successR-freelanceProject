@@ -1,9 +1,11 @@
 <!-- @format -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>SuccessR Homepage</title>
+		<link
+			rel="icon"
+			href="assets/images/icon.ico" />
 		<meta charset="utf-8" />
 		<meta
 			name="viewport"
@@ -15,698 +17,246 @@
 			name="author"
 			content="Project created by SuccessR web_team" />
 
+		<title>Home</title>
+
+		<!-- Reset -->
 		<link
 			rel="stylesheet"
-			type="text/css"
-			href="assets/css/style.css" />
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="assets/css/bootstrap.css" />
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-		<link
-			rel="icon"
-			href="assets/images/icon.ico" />
+			href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
 		<!-- for icons-->
 
 		<script
 			src="https://kit.fontawesome.com/e5ed0bd796.js"
 			crossorigin="anonymous"></script>
 		<!-- fontawesome icon-->
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://use.fontawesome.com/d3602999a9.js"></script>
+
+		<!-- Google Fonts -->
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap"
+			rel="stylesheet" />
+		<!-- CSS -->
+		<!-- <link
+				rel="stylesheet"
+				type="text/css"
+				href="assets/css/style.css" /> -->
+		<link
+			rel="stylesheet"
+			href="./assets/css/body.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/css/header.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/css/dropDown.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/css/footer.css" />
+		<!-- END CSS -->
+		<style>
+			html {
+				font-size: 16px;
+				font-family: "Figtree", sans-serif;
+				line-height: 1.5;
+			}
+
+			img {
+				display: block;
+			}
+			#hero {
+				height: 100vh;
+
+				color: white;
+				position: relative;
+			}
+
+			#hero::before {
+				content: "";
+				position: absolute;
+				inset: 0;
+				background: rgba(15, 21, 37, 0.8);
+				z-index: -1;
+			}
+
+			.container {
+				width: 100%;
+				margin: 0 auto;
+				height: 100%;
+				padding: 0 0 4rem 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-start;
+			}
+
+			h1 {
+				font-size: 4.875rem;
+				font-weight: 700;
+				max-width: 50%;
+				line-height: 1.2;
+				margin: 0 0 6rem 10rem;
+			}
+
+			h1 span {
+				color: #ffbf1a;
+			}
+
+			video {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				object-fit: cover;
+				z-index: -2;
+			}
+		</style>
 	</head>
-	<style>
-		#imageSection {
-			vertical-align: middle;
-			background-size: 100% 100%;
-			background-repeat: no-repeat;
-			background-image: url("assets/images/bg1.jpg");
-		}
-		#imageSection p {
-			margin-left: 30%;
-			text-align: left;
-			text-shadow: black;
-			font-size: 4vw;
-			font-weight: bolder;
-			color: white;
-			font-family: Georgia, "Times New Roman", Times, serif;
-		}
-	</style>
-
 	<body>
-		<!--------------------------------------------------- SECTION 1---------------------------------------------------------->
-		<!--  Logo and Page title section  -->
-		<div class="logoSection col-lg-12">
-			<div
-				class="col-lg-4 col-md-6 col-xs-6"
-				style="
-					top: 0%;
-					background-color: black;
-					padding-top: 2%;
-					margin-right: 8%;
-				">
-				<a href="index.html">
-					<img
-						id="logoIn"
-						src="assets/images/SuccessR logo.svg"
-						alt="logo"
-						style="
-							border: none;
-							margin-left: 0%;
-							margin-bottom: 2%;
-							width: 20%;
-						" />
-				</a>
-				<p>
-					<b> SuccessR</b><br /><i style="font-size: 15px"
-						>&nbsp;&nbsp;&nbsp;&nbsp;your way to success</i
-					>
-				</p>
-			</div>
-		</div>
-
-		<!----------------------  Nav Bar section  ----------------------->
-		<nav
-			class="navbar navbar-expand-lg"
-			style="background-color: #c59604; color: #f5d329">
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarNavDropdown"
-				aria-controls="navbarNavDropdown"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-				style="background-color: #f5d329; border-color: #fff; width: 10%">
-				<i
-					class="fa fa-bars"
-					style="width: 5%"></i
-				><a
-					class="navbar-brand"
-					href="#"
-					style="color: black; font-size: 2vw"
-					>&nbsp;MENU</a
-				>
-			</button>
-			<div
-				class="collapse navbar-collapse"
-				id="navbarNavDropdown">
-				<ul
-					class="navbar-nav"
-					style="width: 100%">
-					<li
-						class="nav-item active"
-						style="margin-right: 2%">
-						<a
-							class="nav-link"
-							href="./index.html"
-							style="color: #f5d329; font-weight: bolder"
-							>HOME <span class="sr-only">(current)</span></a
-						>
-					</li>
-					<li
-						class="nav-item dropdown"
-						style="margin-right: 2%">
-						<a
-							class="nav-link dropdown-toggle"
-							href="#"
-							id="navbarDropdownMenuLink"
-							role="button"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-							style="color: #f5d329; font-weight: bolder">
-							ABOUT US
-						</a>
-						<div
-							class="dropdown-menu"
-							aria-labelledby="navbarDropdownMenuLink"
-							style="color: #f5d329; background-color: #c59604">
-							<a
-								class="dropdown-item"
-								href="./about.html"
-								style="color: #f5d329"
-								>About SuccessR</a
-							>
-							<a
-								class="dropdown-item"
-								href="./OurTeam.html"
-								style="color: #f5d329"
-								>Our Team</a
-							>
-							<a
-								class="dropdown-item"
-								href="./OurPartners.html"
-								style="color: #f5d329"
-								>Partner with us</a
-							>
-						</div>
-					</li>
-					<li
-						class="nav-item dropdown"
-						style="margin-right: 2%">
-						<a
-							class="nav-link dropdown-toggle"
-							href="#"
-							id="navbarDropdownMenuLink"
-							role="button"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-							style="color: #f5d329; font-weight: bolder">
-							CAREER GUIDANCE
-						</a>
-						<div
-							class="dropdown-menu"
-							aria-labelledby="navbarDropdownMenuLink"
-							style="color: #f5d329; background-color: #c59604">
-							<a
-								class="dropdown-item"
-								href="#"
-								style="color: #f5d329"
-								>Job Opportunities</a
-							>
-							<a
-								class="dropdown-item"
-								href="#"
-								style="color: #f5d329"
-								>Internships</a
-							>
-							<a
-								class="dropdown-item"
-								href="#"
-								style="color: #f5d329"
-								>Courses</a
-							>
-						</div>
-					</li>
-					<li
-						class="nav-item dropdown"
-						style="margin-right: 2%">
-						<a
-							class="nav-link dropdown-toggle"
-							href="#"
-							id="navbarDropdownMenuLink"
-							role="button"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-							style="color: #f5d329; font-weight: bolder">
-							LOGIN
-						</a>
-						<div
-							class="dropdown-menu"
-							aria-labelledby="navbarDropdownMenuLink"
-							style="color: #f5d329; background-color: #c59604">
-							<a
-								class="dropdown-item"
-								href="#"
-								style="color: #f5d329"
-								>Candidate Login</a
-							>
-							<a
-								class="dropdown-item"
-								href="#"
-								style="color: #f5d329"
-								>Employer Login</a
-							>
-							<a
-								class="dropdown-item"
-								href="#"
-								style="color: #f5d329"
-								>Campus Login</a
-							>
-						</div>
-					</li>
-					<li
-						class="nav-item dropdown"
-						style="margin-right: 2%">
-						<a
-							class="nav-link dropdown-toggle"
-							href="#"
-							id="navbarDropdownMenuLink"
-							role="button"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-							style="color: #f5d329; font-weight: bolder">
-							SERVICES
-						</a>
-						<div
-							class="dropdown-menu"
-							aria-labelledby="navbarDropdownMenuLink"
-							style="color: #f5d329; background-color: #c59604">
-							<a
-								class="dropdown-item"
-								href="./PlacementAssistance.html"
-								style="color: #f5d329"
-								>Placement Assistance</a
-							>
-							<a
-								class="dropdown-item"
-								href="./JobAlerts.html"
-								style="color: #f5d329"
-								>Job Alerts</a
-							>
-							<a
-								class="dropdown-item"
-								href="TrackJobApplication.html"
-								style="color: #f5d329"
-								>Track job applications</a
-							>
-							<a
-								class="dropdown-item"
-								href="interviewPrepartion.html"
-								style="color: #f5d329"
-								>Interview Preparation</a
-							>
-							<a
-								class="dropdown-item"
-								href="OtherServices.html"
-								style="color: #f5d329"
-								>Other Services</a
-							>
-						</div>
-					</li>
-					<li
-						class="nav-item"
-						style="margin-right: 2%">
-						<a
-							class="nav-link"
-							href="#"
-							style="color: #f5d329; font-weight: bolder"
-							>BLOG</a
-						>
-					</li>
-					<li
-						class="nav-item"
-						style="margin-right: 2%">
-						<a
-							class="nav-link"
-							href="faq.html"
-							target="_blank"
-							style="color: #f5d329; font-weight: bolder"
-							>FAQs</a
-						>
-					</li>
-					<li
-						class="nav-item"
-						style="margin-right: 2%">
-						<a
-							class="nav-link"
-							href="contactUs.html"
-							target="_blank"
-							style="color: #f5d329; font-weight: bolder"
-							>CONTACT US</a
-						>
-					</li>
-				</ul>
-			</div>
-		</nav>
-
-		<!---------------------------   Image Section    ---------------------->
-		<div id="imageSection">
-			<br /><br /><br /><br /><br /><br /><br /><br /><br />
-			<p>
-				THE &nbsp; EASIEST &nbsp; WAY &nbsp; <br />TO &nbsp; GET &nbsp; YOUR
-				&nbsp; <br />DREAM &nbsp; JOB.
-			</p>
-			<br />
-		</div>
-		<br />
-
-		<!--------------------------------------------------- SECTION 2---------------------------------------------------------->
-
-		<!--------------------------------------------Who we are--------------------------------------------->
-		<div class="intro col-lg-12">
-			<div
-				class="col-lg-6"
-				id="heading">
-				<br />
-				<h1 style="color: #c59604; text-align: center; font-weight: bolder">
-					WHO WE ARE?
-				</h1>
-				<p style="font-size: 1.5rem; text-align: justify">
-					Success R Hrtech Pvt LTD is a consultancy, recruitment and training
-					company that provides clients with world-class HR services. With an
-					aim to create employment and procure all industries with a skilled
-					workforce, we ultimately minimize the time, money and resources spent
-					in the recruitment process by Employers. With us Organizations won't
-					have to take an interview as we already shortlist skilled candidates
-					that best match their profile.
-					<br />Read More...
-				</p>
-			</div>
-			<div class="vl"></div>
-			<div
-				class="col-lg-6"
-				id="login">
-				<br />
-				<h1 style="color: #c59604; text-align: center; font-weight: bolder">
-					LOOKING FOR A JOB?
-				</h1>
-				<div class="b1">
-					<a
-						class="bn l"
-						style="font-weight: bolder"
-						>Login</a
-					>
-					<p>or</p>
-					<a
-						class="bn s"
-						style="font-weight: bolder"
-						>Signup</a
-					>
-				</div>
-			</div>
-		</div>
-
-		<!----------------------------------------------Start Services-------------------------------------->
-
-		<section id="services">
+		<section id="hero">
 			<div class="container">
-				<div class="services-title">OUR SERVICES</div>
-				<div class="services-detail">
-					<div class="row">
-						<div class="col-lg-4 col-md-6">
-							<div class="services-selection">
-								<div class="services-icon">
-									<i class="fas fa-lightbulb"></i>
-								</div>
-								<div class="services-description">
-									<p>Placement Assistant</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="services-selection">
-								<div class="services-icon"><i class="fas fa-bell"></i></div>
-								<div class="services-description">
-									<p>Exclusive Job Alerts</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="services-selection">
-								<div class="services-icon">
-									<i class="fas fa-user-friends"></i>
-								</div>
-								<div class="services-description"><p>Recruitment</p></div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="services-selection">
-								<div class="services-icon">
-									<i class="fas fa-sticky-note"></i>
-								</div>
-								<div class="services-description">
-									<p>Track Job Application</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="services-selection">
-								<div class="services-icon">
-									<i class="fas fa-address-card"></i>
-								</div>
-								<div class="services-description">
-									<p>Interview Preparation</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="services-selection">
-								<div class="services-icon">
-									<i class="fab fa-servicestack"></i>
-								</div>
-								<div class="services-description"><p>Other Services</p></div>
-							</div>
-						</div>
+				<video
+					autoplay
+					muted
+					loop>
+					<source
+						src="./assets/videos/video01.mp4"
+						type="video/mp4" />
+				</video>
+
+				<header>
+					<!-- -----------------------------------------------------------------logo -->
+					<div class="logoSection">
+						<a href="./index.html">
+							<img
+								class="logoIn"
+								src="./assets/images/SuccessR logo.svg"
+								alt="logo" />
+						</a>
+						<p>
+							<b> SuccessR</b><br /><i style="font-size: 15px"
+								>&nbsp;&nbsp;&nbsp;&nbsp;your way to success</i
+							>
+						</p>
 					</div>
-				</div>
+					<!-- -------------------------------------------------------------------------logo end -->
+
+					<nav>
+						<ul>
+							<li><a href="./index.html">Home</a></li>
+
+							<li class="has-submenu">
+								<a href="#">About Us</a>
+								<ul>
+									<li><a href="./pages/about.html">About</a></li>
+									<li><a href="./pages/OurTeam.html">Our Team</a></li>
+									<li><a href="./pages/OurPartners.html">Our Partners</a></li>
+								</ul>
+							</li>
+							<li class="has-submenu">
+								<a href="#">Career Guidance</a>
+								<ul>
+									<li><a href="#">Job Opportunities</a></li>
+									<li><a href="#">Internships</a></li>
+									<li><a href="#">Courses</a></li>
+								</ul>
+							</li>
+
+							<li class="has-submenu">
+								<a href="#"> Login </a>
+								<ul>
+									<li><a href="#">Candidate Login</a></li>
+									<li><a href="#">Employe Login</a></li>
+									<li><a href="#">Campus login</a></li>
+								</ul>
+							</li>
+
+							<li class="has-submenu">
+								<a href="#">Services</a>
+								<ul>
+									<li>
+										<a href="./pages/PlacementAssistance.html"
+											>Placement Assistance</a
+										>
+									</li>
+									<li><a href="./pages/JobAlerts.html">Job Alerts</a></li>
+									<li>
+										<a href="./pages/TrackJobApplication.html"
+											>Track JOB Application</a
+										>
+									</li>
+									<li>
+										<a href="./pages/interviewPrepartion.html"
+											>Interview Preparation</a
+										>
+									</li>
+									<li>
+										<a href="./pages/OtherServices.html">Other Services</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</nav>
+				</header>
+
+				<h1>
+					THE EASIEST WAY TO <span>GET</span> YOUR DREAM <span>JOB.</span>
+				</h1>
 			</div>
 		</section>
-
-		<!-----------------------------------------------------SECTION 2 ENDS--------------------------------------------------->
-		<!-----------------------------------------------------SECTION 3 BEGINS--------------------------------------------------->
-		<div class="card-deck">
-			<div class="card">
-				<div
-					class="card-body"
-					style="text-align: left; font-weight: bolder">
-					<h2
-						class="card-title"
-						style="font-weight: bolder">
-						TOP JOB ROLES
-					</h2>
-					<hr
-						style="height: 1%; background-color: #c59604; align-self: center" />
-					<ul style="padding-left: 15%">
-						<li>Full Stack Developer</li>
-						<li>Design Verification Expert</li>
-						<li>Big Data Engineer</li>
-						<li>Frontend Architect</li>
-						<li>Android Developer</li>
-						<li>Python Developer</li>
-						<li>Backend Developer</li>
-						<li>Senior .NET Cloud Developer</li>
-						<li>Sales Executive</li>
-						<li>BMHR Coordinator</li>
-					</ul>
-				</div>
-			</div>
-			<div class="card">
-				<div
-					class="card-body"
-					style="text-align: left; font-weight: bolder">
-					<h2
-						class="card-title"
-						style="font-weight: bolder">
-						TOP RECRUITERS
-					</h2>
-					<hr
-						style="height: 1%; background-color: #c59604; align-self: center" />
-					<ul style="padding-left: 15%">
-						<li>Nile Ltd</li>
-						<li>Acquiscent Pvt Ltd</li>
-						<li>Accentiqa System Pvt Ltd</li>
-						<li>Machint Solutions</li>
-						<li>Aster Technologies Pvt Ltd</li>
-						<li>Vardhaman Airport Delhi</li>
-						<li>Gerald Technologies Inc</li>
-						<li>MedPlus</li>
-						<li>Bills Biotech Pvt Ltd</li>
-						<li>Angel Broking</li>
-					</ul>
-				</div>
-			</div>
-			<div class="card">
-				<div
-					class="card-body"
-					style="text-align: left; font-weight: bolder">
-					<h2
-						class="card-title"
-						style="font-weight: bolder">
-						BLOG CORNER
-					</h2>
-					<hr
-						style="height: 1%; background-color: #c59604; align-self: center" />
-					<ul style="padding-left: 15%">
-						<li><h4>Engaging the Millennial Workforce</h4></li>
-						<br />
-						<p>
-							There are thousands of assumptions associated with the term
-							‘millennial’, as discussed in the context of work culture and
-							organizations. These assumptions hugely differ from ground-reality
-							and facts. Organizations seem surprised as some hard-hitting facts
-							come across their way while they try and understand the millennial
-							generation, who have been fortunate enough to witness the gradual
-							shift towards the digital age. It is only when millennials are
-							given the responsibility to actually try and fail that they are
-							able to learn. Without the opportunity to gain experience from
-							their actions... <a href="#">Read More</a>
-						</p>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<br />
-		<hr
-			style="
-				height: 3px;
-				background-color: #c59604;
-				width: 98%;
-				margin-left: 2%;
-				margin-right: 2%;
-			" />
-		<hr
-			style="
-				height: 3px;
-				background-color: #c59604;
-				width: 98%;
-				margin-left: 2%;
-				margin-right: 2%;
-			" />
-		<!--------------------------- OUR PARTNERS ----------------------------------------->
-
-		<div class="our-partners">
-			<h2
-				class="partners-head"
-				style="font-weight: bolder">
-				OUR &nbsp;PARTNERS
-			</h2>
-			<div class="row">
-				<div class="container-fluid">
-					<div class="col-md-12">
-						<img
-							src="assets/images/partners.jpg"
-							alt="our partners" />
-					</div>
-				</div>
-			</div>
-		</div>
-		<hr
-			style="
-				height: 3px;
-				background-color: #c59604;
-				width: 98%;
-				margin-left: 2%;
-				margin-right: 2%;
-			" />
-		<br />
-		<!------------------------------------- NewsLetter --------------------------------------->
-		<div class="newsletter">
-			<div class="container row">
-				<div class="col-lg-4 col-md-6 col-xs-6">
-					<img
-						class="mail-img"
-						src="assets/images/mailbg.png"
-						alt="mail image" />
-				</div>
-				<div class="col-lg-4 col-md-6 col-xs-6">
-					<h4
-						class="newsletter-head"
-						style="font-weight: bolder">
-						NEWSLETTER
-					</h4>
-					<p class="updated">
-						<em><b>Stay Updated...</b></em>
-					</p>
-				</div>
-				<div class="col-lg-4 col-md-6 col-xs-6">
-					<button class="subscribebtn">
-						<i
-							class="fa fa-bell"
-							aria-hidden="true"></i
-						>&nbsp;Subscribe</button
-					><br />
-				</div>
-			</div>
-		</div>
 
 		<!----Footer Section Begins------>
 		<div class="footer">
 			<div class="inner-footer">
 				<div class="footer-items">
-					<div class="footer1">
-						<h2>Quick Links</h2>
-						<div class="border"></div>
-						<ul>
-							<li>About Us</li>
-							<li>Hiring</li>
-							<li>Terms Of Use</li>
-							<li>Privacy Policy</li>
-							<li>Terms & Conditions</li>
-						</ul>
-					</div>
+					<h2>Quick Links</h2>
+					<ul>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Hiring</a></li>
+						<li><a href="#">Terms Of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
 				</div>
 
 				<div class="footer-items">
-					<div class="footer2">
-						<h2>Program</h2>
-						<div class="border1"></div>
-						<ul>
-							<li>Jobs</li>
-							<li>Internships</li>
-							<li>Web Development</li>
-							<li>Machine Learning</li>
-							<li>Content Writing</li>
-							<li>Management</li>
-						</ul>
-					</div>
+					<h2>Program</h2>
+					<ul>
+						<li><a href="#">Jobs</a></li>
+						<li><a href="#">Internships</a></li>
+						<li><a href="#">Web Development</a></li>
+					</ul>
 				</div>
 
 				<div class="footer-items">
 					<h2>Contact Us</h2>
-					<div class="border2"></div>
-					<ul>
-						<p>
-							<i
-								class="fa fa-map-marker"
-								aria-hidden="true"
-								style="color: #c59604"></i>
-							Room# 15, Plot# 22, Near Municipal School, Kherwadi, Bandra (E),
-							Mumbai, Maharashtra, India 40005
-						</p>
-						<li>
-							<i
-								class="fa fa-phone"
-								aria-hidden="true"
-								style="color: #c59604"></i>
-							+91-7498792719
-						</li>
-						<li>
-							<i
-								class="fa fa-envelope"
-								aria-hidden="true"
-								style="color: #c59604"></i>
-							info@successr.in
-						</li>
-					</ul>
+					<p>
+						<i class="fa fa-map-marker"></i> Mumbai, Maharashtra, India 40005
+					</p>
+					<p><i class="fa fa-phone"></i> +91-7498792719</p>
+					<p><i class="fa fa-envelope"></i> info@successr.in</p>
 				</div>
+
 				<div class="footer-items">
-					<h2>Icons</h2>
-					<div class="border3"></div>
-					<img
-						id="google"
-						src="assets/images/googleplay.png"
-						width="147px"
-						height="45px" />
+					<h2>Follow Us</h2>
 					<div class="social-media">
-						<a href="#"
-							><i
-								class="fa fa-facebook"
-								aria-hidden="true"></i
-						></a>
-						<a href="#"
-							><i
-								class="fa fa-twitter"
-								aria-hidden="true"></i
-						></a>
-						<a href="#"
-							><i
-								class="fa fa-instagram"
-								aria-hidden="true"></i
-						></a>
-						<a href="#"
-							><i
-								class="fa fa-linkedin"
-								aria-hidden="true"></i
-						></a>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
 					</div>
 				</div>
-				<hr />
-				<div id="copy-right">
-					<div>&copy; Copyright 2020 SuccessrR Pvt. Ltd.</div>
-				</div>
+			</div>
+			<div class="footer-bottom">
+				&copy; 2024 SuccessrR Pvt. Ltd. All Rights Reserved.
 			</div>
 		</div>
 

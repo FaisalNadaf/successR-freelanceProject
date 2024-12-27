@@ -1,95 +1,115 @@
+/** @format */
+
 :root {
-  --def-transition-duration: 0.3s;
+	--def-transition-duration: 0.3s;
 }
 
 * {
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 3rem;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: 2rem;
 }
 
 nav ul li {
-  position: relative;
+	position: relative;
 }
 
 nav ul a {
-  text-decoration: none;
-  color: #c59604;
-  display: inline-block;
-  padding: 1.5rem 0;
-  transition: color var(--def-transition-duration) ease-in-out;
+	text-decoration: none;
+	color: #c59604;
+	display: inline-block;
+	padding: 1.5rem 0;
+	transition: color var(--def-transition-duration) ease-in-out;
 }
 
 nav ul a:hover {
-  color: #e8e8e8;
+	color: #e8e8e8;
 }
 
 .has-submenu {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
 }
 
 .has-submenu::after {
-  content: "⮟";
-  color: #c59604;
-  opacity: 0.6;
-  transition: opacity var(--def-transition-duration) ease-in-out;
+	content: "⮟";
+	color: #c59604;
+	opacity: 0.6;
+	transition: opacity var(--def-transition-duration) ease-in-out;
 }
 
 .has-submenu:hover > a {
-  color: #e8e8e8;
+	color: #e8e8e8;
 }
 
 .has-submenu ul {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #cbcbcb;
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-10px);
-  transition: opacity var(--def-transition-duration) ease-in-out, 
-              visibility var(--def-transition-duration) ease-in-out, 
-              transform var(--def-transition-duration) ease-in-out;
-  z-index: 1000;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #cbcbcb;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-10px);
+	transition: opacity var(--def-transition-duration) ease-in-out,
+		visibility var(--def-transition-duration) ease-in-out,
+		transform var(--def-transition-duration) ease-in-out;
+	z-index: 1000;
 }
 
 .has-submenu:hover ul {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+	display: block;
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+.has-submenu ul a::after {
+	content: "→";
+	height: 17px;
+	padding-left: 5px;
+	padding-bottom: 30px;
+	opacity: 0;
+}
+.has-submenu ul a:hover::after {
+	opacity: 1;
 }
 
 .has-submenu ul a {
-  width: 180px;
-  display: block;
-  padding: 1rem;
-  color: #333;
-  text-decoration: none;
-  background-color: transparent;
-  border-radius: 0.5rem;
-  transition: background-color var(--def-transition-duration) ease-in-out, 
-              color var(--def-transition-duration) ease-in-out;
+	width: 250px;
+	display: block;
+	padding: 1rem;
+	color: #333;
+	text-decoration: none;
+	background-color: transparent;
+	border-radius: 0.5rem;
+	transition: background-color var(--def-transition-duration) ease-in-out,
+		color var(--def-transition-duration) ease-in-out;
 }
 
 .has-submenu ul a:hover {
-  background-color: #c5a543;
-  color: #fff;
+	background-color: #c5a543;
+	color: #fff;
+
+	padding: 1rem 1.5rem;
 }
-
-
+.has-submenu ul a {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	min-width: 15rem;
+	border-radius: 0.5rem;
+}
