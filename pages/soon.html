@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Job Alerts</title>
+		<title>SuccessR index</title>
 		<meta charset="utf-8" />
 		<meta
 			name="viewport"
@@ -28,12 +28,18 @@
 		<link
 			rel="icon"
 			href="assets/images/icon.ico" />
+		<!-- for icons-->
 
-		<!-- for icons -->
 		<script
 			src="https://kit.fontawesome.com/e5ed0bd796.js"
 			crossorigin="anonymous"></script>
-		<!-- fontawesome icon -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/bs-brain@2.0.4/components/teams/team-2/assets/css/team-2.css" />
+		<!-- fontawesome icon-->
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -55,30 +61,38 @@
 		<link
 			rel="stylesheet"
 			href="../assets/css/body.css" />
+
 		<!-- END CSS -->
+
 		<style>
-			.job-card {
-				border: 1px solid #ffc107;
-				border-radius: 8px;
+			.section {
+				height: 80vh;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
 			}
-			.btn-yellow {
-				background-color: #ffc107;
-				color: #212529;
+			.section h1 {
+				font-size: 3rem;
+				color: #333;
+				font-weight: 800;
 			}
-			.btn-yellow:hover {
-				background-color: #e0a800;
-				color: #fff;
-			}
-			.form-control:focus {
-				border-color: #ffc107;
-				box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+			.section button {
+				padding: 10px 20px;
+				background-color: #333;
+				color: white;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				margin-top: 20px;
 			}
 		</style>
 	</head>
 
 	<body>
 		<!--------------------------------------------------- SECTION 1---------------------------------------------------------->
-		<!-- --------------------------------------------------------------------------heder -->
+
 		<header>
 			<!-- -----------------------------------------------------------------logo -->
 			<div class="logoSection">
@@ -99,6 +113,7 @@
 			<nav>
 				<ul>
 					<li><a href="../index.html">Home</a></li>
+
 					<li class="has-submenu">
 						<a href="../pages/soon.html">About Us</a>
 						<ul>
@@ -147,80 +162,14 @@
 				</ul>
 			</nav>
 		</header>
-
-		<!-- Hero Section -->
-		<section class="py-5 text-center">
-			<div class="container">
-				<h1 class="display-5 text-warning">Never Miss a Job Opportunity!</h1>
-				<p class="text-secondary">
-					Subscribe to get job alerts delivered straight to your inbox.
-				</p>
-				<form class="row g-3 justify-content-center">
-					<div class="col-md-5">
-						<input
-							type="email"
-							class="form-control"
-							placeholder="Enter your email"
-							required />
-					</div>
-					<div class="col-auto">
-						<button
-							type="submit"
-							class="btn btn-yellow">
-							Subscribe
-						</button>
-					</div>
-				</form>
-			</div>
-		</section>
-
-		<!-- Job Listings -->
-		<section class="py-5">
-			<div class="container">
-				<h2 class="text-center text-warning mb-4">Latest Job Openings</h2>
-				<div class="row gy-4">
-					<!-- Job Card 1 -->
-					<div class="col-md-4">
-						<div class="job-card p-4 bg-white">
-							<h5 class="text-warning">Software Engineer</h5>
-							<p class="text-secondary">Location: New York, USA</p>
-							<p class="text-secondary">Salary: 80,000 - 100,000</p>
-							<a
-								href="../pages/soon.html"
-								class="btn btn-yellow w-100"
-								>Apply Now</a
-							>
-						</div>
-					</div>
-					<!-- Job Card 2 -->
-					<div class="col-md-4">
-						<div class="job-card p-4 bg-white">
-							<h5 class="text-warning">Frontend Developer</h5>
-							<p class="text-secondary">Location: Remote</p>
-							<p class="text-secondary">Salary: 70,000 - 90,000</p>
-							<a
-								href="../pages/soon.html"
-								class="btn btn-yellow w-100"
-								>Apply Now</a
-							>
-						</div>
-					</div>
-					<!-- Job Card 3 -->
-					<div class="col-md-4">
-						<div class="job-card p-4 bg-white">
-							<h5 class="text-warning">Data Analyst</h5>
-							<p class="text-secondary">Location: London, UK</p>
-							<p class="text-secondary">Salary: 50,000 - 70,000</p>
-							<a
-								href="../pages/soon.html"
-								class="btn btn-yellow w-100"
-								>Apply Now</a
-							>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		<div class="section">
+			<h1>Coming Soon</h1>
+			<p>
+				Our website is under construction. We'll be here soon with our new
+				awesome site.
+			</p>
+			<a href="../index.html"><button>Home</button></a>
+		</div>
 
 		<!----Footer Section Begins------>
 		<div class="footer">
